@@ -40,6 +40,7 @@ function printaHoras(){
 	for (var i=0; i<available.length; i++){
 		if(new Date(available[i].firstDate) <= dd) found = 1;
 	}
+	console.log((new Date()).toGMTString());
 	console.log(available);
 	if(found){
 		var audio = new Audio('https://cdn.freesound.org/previews/132/132930_321967-lq.mp3');
